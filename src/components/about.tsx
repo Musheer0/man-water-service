@@ -40,12 +40,12 @@ const About = () => {
 
          
     </section>
-       <div className="ig flex flex-col items-center gap-2 py-10 text-zinc-100 bg-gradient-to-l from-pink-600 to-orange-500">
+       <div className="ig flex flex-col items-center justify-center gap-2 py-10 text-zinc-100 bg-gradient-to-l from-pink-600 to-orange-500">
               <p className='flex items-center gap-1 font-semibold text-xs  bg-zinc-100/10 text-white  w-fit px-3 py-1 rounded-full'>
                 <InstagramIcon size={14}/>
                 Follow Our Journey
               </p>
-              <h2 className='text-3xl font-semibold py-2 leading-none'>See Our Work on Instagram</h2>
+              <h2 className='text-3xl font-semibold text-center py-2 leading-none'>See Our Work on Instagram</h2>
               <p className='text-center max-w-xl'>Follow
                  <Link
               className='font-semibold underline text-white

@@ -7,7 +7,7 @@ export default function ExperienceSection() {
     <section className="relative w-full bg-white h-full mb-20 text-zinc-800 px-4 py-16 sm:px-8 overflow-hidden">
       {/* Heading */}
       <div className="max-w-4xl mx-auto text-center space-y-4 mb-12">
-        <h2 className="text-6xl font-bold font-handwriting">
+        <h2 className="sm:text-6xl text-4xl font-bold font-handwriting">
           We are very experienced in <br className="hidden sm:block" /> cleaning services
         </h2>
         <p className="text-sm sm:text-base text-zinc-600 max-w-2xl mx-auto">
@@ -23,10 +23,10 @@ export default function ExperienceSection() {
             src={src}
             className={
               i === 0
-                ? "sm:translate-y-24 sm:flex hidden"
+                ? "sm:translate-y-24"
                 : i === 2
                 ? "sm:translate-y-24 sm:flex hidden"
-                : ""
+                : " sm:flex hidden"
             }
           />
         ))}
