@@ -55,7 +55,7 @@ export default function RootLayout({
         {/* Basic SEO Meta */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#1e3a8a" />
-          <meta name="google-site-verification" content="google-site-verification=e2OxTEwH5aL0AzTV0oqw9avcuyEg5h0816DLyJ9nQsk" />
+
 
         {/* Preload critical images */}
         <link rel="preload" as="image" href="/before.png" />
