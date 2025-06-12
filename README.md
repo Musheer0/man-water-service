@@ -84,7 +84,7 @@ Logo & visuals © 2025 Man Water Service.
 
 ---
 
-## 📜 License
+## 📜 License.
 
 This project is licensed under the **MIT License** — use it, remix it, just don’t copy-paste and forget to give credit. Karma’s a tank full of sludge 🫡
 
