@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     title: "Man Water Service | Kerala’s Trusted Cleaning Pros",
     description:
       "Get spotless results from Kerala's local cleaning experts. Book water tank, home, or car cleaning with confidence.",
-    url: "https://man-water-service.vercel.app",
+    url: "https://man-water-serivce.netlify.app",
     siteName: "Man Water Service",
     images: [
       {
-        url: "/og.png",
+        url: "./og.png",
         width: 1200,
         height: 630,
         alt: "Man Water Service - Kerala’s Top Cleaning Team",
@@ -56,6 +56,14 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#1e3a8a" />
 
+<meta property="og:title" content="Man Water Service" />
+<meta property="og:description" content="Get spotless results from Kerala's local cleaning experts. Book water tank, home, or car cleaning with confidence.." />
+<meta property="og:image" content="https://man-water-serivce.netlify.app/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://man-water-serivce.netlify.app/" />
+
         {/* Preload critical images */}
         <link rel="preload" as="image" href="/before.png" />
         <link rel="preload" as="image" href="/after.png" />
@@ -68,9 +76,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Man Water Service",
-              image: "https://man-water-service.vercel.app/og.png",
-              "@id": "https://man-water-service.vercel.app",
-              url: "https://man-water-service.vercel.app",
+              image: "https://man-water-serivce.netlify.app/og.png",
+              "@id": "https://man-water-serivce.netlify.app",
+              url: "https://man-water-serivce.netlify.app",
               telephone: "+91 9746408824",
               address: {
                 "@type": "PostalAddress",

@@ -1,9 +1,13 @@
 "use client"
 
 import type React from "react"
-
-import { useState, useRef, useCallback } from "react"
-import { motion } from "framer-motion"
+import {
+  useState,
+  useRef,
+  useCallback,
+  useEffect,
+} from "react"
+import { motion, useMotionValue, animate } from "framer-motion"
 
 interface CompareProps {
   firstItem: React.ReactNode
@@ -22,15 +26,28 @@ export default function Compare({
   secondItem,
   firstItemClassName = "",
   secondItemClassName = "",
-  initialSliderPercentage = 50,
+  initialSliderPercentage = 0,
   slideMode = "hover",
   showHandleBar = true,
   handleClassName = "",
   className = "",
 }: CompareProps) {
   const [sliderXPercent, setSliderXPercent] = useState(initialSliderPercentage)
+  const sliderMotionValue = useMotionValue(initialSliderPercentage)
   const [isDragging, setIsDragging] = useState(false)
   const sliderRef = useRef<HTMLDivElement>(null)
+
+  // Animate on load from 0 to 50%
+  useEffect(() => {
+    const controls = animate(sliderMotionValue, 50, {
+      duration: 0.5,
+      ease: "easeInOut",
+      onUpdate: (latest) => {
+        setSliderXPercent(latest)
+      },
+    })
+    return () => controls.stop()
+  }, [])
 
   const handleMouseMove = useCallback(
     (e: React.MouseEvent<HTMLDivElement>) => {
@@ -79,9 +96,12 @@ export default function Compare({
       onTouchEnd={handleMouseUp}
       style={{ cursor: isDragging ? "grabbing" : "grab" }}
     >
-        <div className="opacity-0 pointer-events-none">{firstItem}</div>
-              {/* First Item (Background) */}
-      <div className={`absolute inset-0 ${firstItemClassName}`}>{firstItem}</div>
+      <div className="opacity-0 pointer-events-none">{firstItem}</div>
+
+      {/* First Item (Background) */}
+      <div className={`absolute inset-0 ${firstItemClassName}`}>
+        {firstItem}
+      </div>
 
       {/* Second Item (Foreground with clip) */}
       <motion.div
@@ -119,7 +139,6 @@ export default function Compare({
           </div>
         </motion.div>
       )}
-
     </div>
   )
 }

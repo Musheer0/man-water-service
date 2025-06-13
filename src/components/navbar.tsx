@@ -19,7 +19,7 @@ const Navbar = () => {
         },
     ]
   return (
-<nav className="w-full flex px-4 py-3 pt-5 items-center justify-between">
+<nav className="w-full movedown flex px-4 py-3 pt-5 items-center justify-between">
           <div className="logo">
           <div className="logo flex items-center gap-1">
               <Image

@@ -127,7 +127,7 @@ export default function ServicesSection() {
         READY TO JOIN THE CLEAN REVOLUTION? 🚀
       </h3>
       <p className="text-sm sm:text-base mt-2 text-white/90">
-        Thousands of happy customers can&apos;t be wrong! Let&apos;s make your space sparkle too!
+        Hundreds of happy customers can&apos;t be wrong! Let&apos;s make your space sparkle too!
       </p>
     </div>
     <Link
