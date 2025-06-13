@@ -64,6 +64,7 @@ export default function RootLayout({
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://man-water-serivce.netlify.app/" />
 
+
         {/* Preload critical images */}
         <link rel="preload" as="image" href="/before.png" />
         <link rel="preload" as="image" href="/after.png" />
