@@ -29,7 +29,7 @@ const Navbar = () => {
               <Image
             width={40}
             height={40}
-            src={'/logo.png'}
+            src={'/logo.avif'}
             alt='man waterlogo image'
             className='mix-blend-multiply'
             />
