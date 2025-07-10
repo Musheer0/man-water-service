@@ -13,7 +13,7 @@ export default function CTAGallerySection() {
       <div className="container mx-auto max-w-4xl text-center text-white">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">See Our Work in Action</h2>
         <p className="text-xl md:text-2xl mb-8 text-gray-200">
-          Professional cleaning results that speak for themselves
+          Professional cleaning results that speak for themselves.
       </p>
         <Link
          href={'/gallery'}
