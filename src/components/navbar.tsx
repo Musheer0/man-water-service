@@ -17,6 +17,10 @@ const Navbar = () => {
             label:'Service',
             href: '/#service'
         },
+        {
+            label:'Gallery',
+            href: '/gallery'
+        },
     ]
   return (
 <nav className="w-full movedown flex px-4 py-3 pt-5 items-center justify-between">

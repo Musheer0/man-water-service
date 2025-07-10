@@ -14,7 +14,7 @@ export default function Footer() {
 
         {/* Left: Logo + Name */}
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="Man Water Logo" className="w-10 h-10 object-contain rounded-md" />
+          <img src="/logo.avif" alt="Man Water Logo" className="w-10 h-10 object-contain rounded-md" />
           <span className="font-semibold text-lg sm:text-xl">Man Water Service</span>
         </div>
 
@@ -35,6 +35,7 @@ export default function Footer() {
           <Link href="/#about" className="hover:text-blue-600 transition">About</Link>
           <Link href="/#service" className="hover:text-blue-600 transition">Services</Link>
           <Link href="/#contact" className="hover:text-blue-600 transition">Contact</Link>
+          <Link href="/gallary" className="hover:text-blue-600 transition">See our works</Link>
         </div>
 
         <div className="text-center sm:text-right flex flex-col sm:flex-row gap-2 sm:gap-6 items-center">

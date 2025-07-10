@@ -94,10 +94,10 @@ className="mt-2 text-zinc-500 text-sm italic">
       <div className="right shadow  h-full max-h-[500px] max-w-[500px] mx-auto flex-1 min-w-[300px]  overflow-hidden  ">
         <Compare
         firstItem={
-            <img src="/before.webp" alt=""  />
+            <img src="/before.avif" alt=""  />
         }
         secondItem={
-                      <img src="/after.webp" alt=""  className=' h-full'/>
+                      <img src="/after.avif" alt=""  className=' h-full'/>
 
         }
 className='w-fit h-full'

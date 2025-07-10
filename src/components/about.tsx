@@ -24,7 +24,7 @@ const totalDelay = totalWords * staggerDuration -0.2
         transition={{
           duration: 1
         }}
-        src={'/about.png'}
+        src={'/about.avif'}
         width={150}
         height={150}
         alt='about image'

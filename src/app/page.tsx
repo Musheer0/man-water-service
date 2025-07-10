@@ -4,10 +4,10 @@ import About from '@/components/about';
 import Experience from '@/components/experience';
 import ContactSection from '@/components/contact';
 import ServicesSection from '@/components/services';
-import Footer from '@/components/footer';
 import Hero from '@/components/hero';
 import Seo from '@/components/seo';
 import Link from 'next/link';
+import CTAGallerySection from '@/components/cta-gallary';
 
 const page = () => {
   return (
@@ -48,9 +48,8 @@ const page = () => {
             </div>
     <ServicesSection/>
     <Experience/>
-
+    <CTAGallerySection/>
     <ContactSection/>
-    <Footer/>
 </>
   )
 }
