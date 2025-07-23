@@ -109,13 +109,13 @@ const MobileMenu = () => {
               className="fixed inset-0 bg-white z-40 flex flex-col"
             >
               {/* Links */}
-              <nav className="flex flex-col justify-center h-full pl-8 space-y-6">
+              <nav className="flex flex-col justify-center  h-full pl-8 space-y-6">
                 {links.map((link) => (
                   <motion.div key={link.href} variants={linkVariants} className={`relative overflow-hidden  ${dmSans.className}`}>
                     <motion.a
                       href={link.href}
                       onClick={toggleMenu}
-                      className="block text-5xl font-light text-gray-900 hover:text-red-500 transition-colors duration-300 py-2 relative"
+                      className="block text-6xl font-light border-b border-zinc-200 hover:border-zinc-50 text-gray-900 hover:text-blue-500 relative transition-colors duration-300 py-2 relative"
                       whileTap={{ scale: 0.98 }}
                       initial="rest"
                       whileHover="hover"
@@ -125,7 +125,7 @@ const MobileMenu = () => {
                       {link.label}
                       {/* Borders */}
                       <motion.div
-                        className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-red-500 to-red-600 rounded-full"
+                        className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-blue-50 w-1/2"
                         variants={{
                           rest: { scaleX: 0, originX: 0 },
                           hover: { scaleX: 1, originX: 0 },

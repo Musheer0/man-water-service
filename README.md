@@ -6,7 +6,7 @@ Welcome to the GitHub repo for **Man Water Service**, the ultimate cleaning squa
 
 ## 🌐 Live Site
 
-👉 [Visit Man Water Service](https://man-water-service.vercel.app/)
+👉 [Visit Man Water Service](https://man-water-service.pages.dev)
 
 ---
 
