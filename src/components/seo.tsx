@@ -33,7 +33,7 @@ const Seo = () => {
 </section>
   <section className='hidden '  id='about'>
         <Image
-        src={'/about.png'}
+        src={'/about.avif'}
         width={150}
         height={150}
         alt='about image'

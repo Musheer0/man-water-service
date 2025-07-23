@@ -8,6 +8,8 @@ const font = Host_Grotesk({
   subsets: ["latin", "latin-ext"],
 });
 
+const BASE_URL = process.env.NEXT_PUBLIC_APP!;
+
 export const metadata: Metadata = {
   title: "Man Water Service | Kerala’s Trusted Cleaning Pros",
   description:
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
     title: "Man Water Service | Kerala’s Trusted Cleaning Pros",
     description:
       "Get spotless results from Kerala's local cleaning experts. Book water tank, home, or car cleaning with confidence.",
-    url: "https://man-water-serivce.netlify.app",
+    url: BASE_URL,
     siteName: "Man Water Service",
     images: [
       {
@@ -57,18 +59,18 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#1e3a8a" />
 
-<meta property="og:title" content="Man Water Service" />
-<meta property="og:description" content="Get spotless results from Kerala's local cleaning experts. Book water tank, home, or car cleaning with confidence.." />
-<meta property="og:image" content="https://man-water-serivce.netlify.app/og.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://man-water-serivce.netlify.app/" />
-
+        <meta property="og:title" content="Man Water Service" />
+        <meta property="og:description" content="Get spotless results from Kerala's local cleaning experts. Book water tank, home, or car cleaning with confidence.." />
+        <meta property="og:image" content={`${BASE_URL}/og.avif`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={BASE_URL} />
 
         {/* Preload critical images */}
-        <link rel="preload" as="image" href="/before.png" />
-        <link rel="preload" as="image" href="/after.png" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" as="image" href="/before.avif" />
+        <link rel="preload" as="image" href="/after.avif" />
 
         {/* Structured Data */}
         <script
@@ -78,9 +80,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Man Water Service",
-              image: "https://man-water-serivce.netlify.app/og.png",
-              "@id": "https://man-water-serivce.netlify.app",
-              url: "https://man-water-serivce.netlify.app",
+              image: "./og.avif",
+              "@id": BASE_URL,
+              url: BASE_URL,
               telephone: "+91 9746408824",
               address: {
                 "@type": "PostalAddress",
@@ -99,7 +101,7 @@ export default function RootLayout({
         <main>
           <Navbar />
           {children}
-          <Footer/>
+          <Footer />
         </main>
       </body>
     </html>
