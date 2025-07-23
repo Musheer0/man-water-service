@@ -35,7 +35,7 @@ export default function Footer() {
           <Link href="/#about" className="hover:text-blue-600 transition">About</Link>
           <Link href="/#service" className="hover:text-blue-600 transition">Services</Link>
           <Link href="/#contact" className="hover:text-blue-600 transition">Contact</Link>
-          <Link href="/gallary" className="hover:text-blue-600 transition">See our works</Link>
+          <Link href="/gallery" className="hover:text-blue-600 transition">See our works</Link>
         </div>
 
         <div className="text-center sm:text-right flex flex-col sm:flex-row gap-2 sm:gap-6 items-center">
