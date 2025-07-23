@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     description:
       "Expert water tank, car, and house cleaning services in Kerala.",
     creator: "@man_water_service",
-    images: ["/og.png"],
+    images: [`${BASE_URL}/og.avif`],
   },
 };
 
@@ -80,7 +80,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Man Water Service",
-              image: "./og.avif",
+              image: `${BASE_URL}/og.avif`,
               "@id": BASE_URL,
               url: BASE_URL,
               telephone: "+91 9746408824",
