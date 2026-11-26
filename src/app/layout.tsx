@@ -99,9 +99,9 @@ export default function RootLayout({
         className={`${font.className} antialiased max-w-[1600px] mx-auto`}
       >
         <main>
-          <Navbar />
+         
           {children}
-          <Footer />
+          
         </main>
       </body>
     </html>
