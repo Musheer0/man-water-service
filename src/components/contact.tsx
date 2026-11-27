@@ -5,7 +5,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 
-const numbers = ["9746408824", "6235878231", "7012450655"];
+const numbers = ["9497847655"];
 
 export default function ContactSection() {
   const [copied, setCopied] = useState<string | null>(null);
